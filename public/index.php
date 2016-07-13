@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-    <html lang="ru">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>My Little Blog</title>
     </head>
     <body>
-    <h1><?php echo 'My Little Bloh'; ?></h1>
+        <h1><?php echo 'My Little Blog'; ?></h1>
     </body>
 
     <?php
@@ -27,7 +27,9 @@
         for ($i = 0; $i < $rows; ++$i) {
             $row = mysqli_fetch_row($result);
             echo "<tr>";
-            for ($j = 0; $j < 4; ++$j) echo "<td>$row[$j]</td>";
+            for ($j = 0; $j < 4; ++$j) {
+                echo "<td>$row[$j]</td>";
+            }
             echo "</tr>";
         }
         echo "</table>";
