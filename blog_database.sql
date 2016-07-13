@@ -1,14 +1,8 @@
-SET time_zone = "+00:00";
-
 CREATE TABLE IF NOT EXISTS `posts` (
-    `id`     INT(11)     NOT NULL AUTO_INCREMENT,
+    `id`     INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `author` VARCHAR(64) NOT NULL,
-    `time`   timestamp   NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `text`   text        NOT NULL,
-    PRIMARY KEY (`id`)
-)
-    ENGINE = InnoDB
-    DEFAULT CHARSET = utf8;
+    `time`   TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `text`   TEXT        NOT NULL
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
-INSERT INTO `posts` (`author`, `text`) VALUES
-    ('Me', 'Hello world(2)');
+INSERT INTO `posts` (`author`, `text`) VALUES ('Me', 'Hello world');
