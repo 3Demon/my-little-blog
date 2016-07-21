@@ -32,10 +32,12 @@
 
                     for ($i = 0; $i < $rows; ++$i) {
                         $row = mysqli_fetch_row($result);
+                        echo "<div class='postwrap'>";
                         echo "<article class='post'>";
                         echo "<h2>$row[1]<br></h2>";
                         echo "$row[3]";
                         echo "</article>";
+                        echo "</div>";
                     }
 
                     // очищаем результат

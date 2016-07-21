@@ -1,57 +1,64 @@
 body {
-    color: #8f8f8f;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f8f8f8;
-    /*border-top: 5px solid #7e7e7e;*/
-    margin: 0;
+  color: #8f8f8f;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8;
+  /*border-top: 5px solid #7e7e7e;*/
+  margin: 0;
 
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 #wrapper {
-    width: 100%;
-    text-align: center;
-    height: 100%;
+  width: 100%;
+  text-align: center;
+  height: 100%;
 }
 
 h1 {
-    text-shadow: -3px 3px 0 black;
+  position: relative;
+  top: calc(100vh - 80px);
 }
 
 h2 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.postwrap {
+  padding-left: 25px; /* Поля вокруг текста */
+  padding-right: 25px; /* Поля вокруг текста */
+}
 .post {
-    color: black;
+  color: black;
+  border-top: 1px solid red; /* Линия сверху текста */
+  /* border-bottom: 1px solid red; Линия снизу текста */
+  padding: 5px;
 }
 
 aside {
-    float: left;
-    width: 50%;
-    height: 100%;
-    background: url("http://images6.fanpop.com/image/photos/34800000/spots-random-34824882-1920-1080.jpg") no-repeat fixed;
-    background-size: contain;
-    position: fixed;
-    padding-top: 40%;
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: url("http://images6.fanpop.com/image/photos/34800000/spots-random-34824882-1920-1080.jpg") no-repeat fixed;
+  background-size: cover;
+  position: fixed;
+  /*padding-top: 40%;*/
 }
 
 section {
-    float: right;
-    width: 50%;
-    color: black;
+  float: right;
+  width: 50%;
+  color: black;
+  background-color: white;
 
-    background-color: #cccccc;
-
-    min-height: 100vh; /*TODO не нравится мне вот это вот*/
+  min-height: 100vh; /*TODO не нравится мне вот это вот*/
 
 }
 
 article {
-    padding: 30px 30px 30px 30px;
-    text-align: start;
+  padding: 30px 30px 30px 30px;
+  text-align: start;
 }
