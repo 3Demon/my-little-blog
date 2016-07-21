@@ -33,7 +33,7 @@ h2 {
 }
 .post {
   color: black;
-  border-top: 1px solid red; /* Линия сверху текста */
+  border-top: 1px solid #8f8f8f; /* Линия сверху текста */
   /* border-bottom: 1px solid red; Линия снизу текста */
   padding: 5px;
 }
@@ -42,7 +42,7 @@ aside {
   float: left;
   width: 50%;
   height: 100%;
-  background: url("http://images6.fanpop.com/image/photos/34800000/spots-random-34824882-1920-1080.jpg") no-repeat fixed;
+  background: url("http://tweak.pro/img/3.jpg") no-repeat fixed;
   background-size: cover;
   position: fixed;
   /*padding-top: 40%;*/
